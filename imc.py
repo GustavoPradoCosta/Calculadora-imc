@@ -1,4 +1,4 @@
-print ("==Calculadora de IMC==")
+print ("===Calculadora de IMC===")
 
 peso = float(input("Digite aqui seu peso em (kg): ").replace (",","."))
 altura = float(input("Digite aqui sua altura em (m): ").replace (",","."))
@@ -6,16 +6,16 @@ altura = float(input("Digite aqui sua altura em (m): ").replace (",","."))
 imc = peso / (altura ** 2)
 
 if imc < 18.5:
-    print ("Classificação: abaixo do peso")
+   Classificacao = "abaixo do peso"
 elif 18.5 <= imc < 25:
-    print ("Classificação: peso normal")
+    Classificacao = "peso normal"
 elif 25 <= imc < 30:
-    print ("Classificação: sobrepeso")
+    Classificacao = "acima do peso, risco à saúde"
 elif 30 <= imc < 35:
-    print ("Classificação: obesidade grau I")
+    Classificacao = "obesidade nível I, risco à saúde"
 elif 35 <= imc < 40:
-    print ("Classificação: obesidade grau II")
-elif imc >= 40:
-    print ("Classificação: obesidade grau III, risco grave de saúde")
+    Classificacao = "obesidade nível II, risco à saúde"
 else:
-    print ("Insira apenas dados válidos")
+    Classificacao = "obesidade nível III, risco grave à saúde"
+
+print (f"Classificação: {Classificacao}")
